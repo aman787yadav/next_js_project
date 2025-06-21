@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📝 Next.js Task Manager - CRUD App
 
-## Getting Started
+This is a **Task Manager** web application built using [Next.js](https://nextjs.org/), bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).  
+It allows users to perform **CRUD** (Create, Read, Update, Delete) operations on tasks.
 
-First, run the development server:
+Each task contains a **title** and a **description**, making it useful for managing to-do lists, personal goals, or project tasks.
 
-```bash
+---
+
+## 🚀 Features
+
+- ✅ Create new tasks with a title and description
+- 📋 View all added tasks
+- ✏️ Edit task details
+- ❌ Delete tasks
+- ⚡ Instant updates using modern React and Next.js features
+
+---
+
+## 💻 Tech Stack
+
+- **Next.js** – React Framework for full-stack applications
+- **React** – For building interactive UI
+- **Tailwind CSS** *(optional)* – For modern and responsive styling
+- **Local State / API Routes** – For managing data (or optionally, a backend/database)
+
+---
+
+## 🛠️ How to Run the Project
+
+Make sure you have **Node.js** installed.
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-username/nextjs-task-crud.git
+   cd nextjs-task-crud
+npm install
+# or
+yarn install
+# or
+pnpm install
+
 npm run dev
 # or
 yarn dev
 # or
 pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+app/
+├── page.js            # Main UI and logic for CRUD
+├── components/        # Reusable UI components (optional)
+├── api/               # API routes (if using Next.js API handling)
+├── styles/            # CSS/Tailwind/Styling files
+...
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+🧪 Future Improvements
+Add user authentication
 
-To learn more about Next.js, take a look at the following resources:
+Use a database like MongoDB or PostgreSQL
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Add task filters (completed, pending, etc.)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Improve UI/UX with animations and responsiveness
